@@ -1,0 +1,215 @@
+
+@import '../../colors/color';
+@import '../../font/font';
+@import '../../mixin/mxixn';
+@import '../../buttons/buttons';
+
+
+.header
+{
+    width: 100%;
+    height: 60px;
+    background-color: #f4f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .head-content
+    {
+       a 
+       {
+          color: $thirdColor;
+          font-family: $fontFamily3;
+          font-style: italic;
+          font-size: $fontSize1 + 2px;
+          font-weight: 400;
+       }
+       a:nth-child(1):hover
+       {
+           text-decoration: underline;
+       }
+       span 
+       {
+           display: inline-block;
+           color: $thirdColor;
+           padding: 10px;
+           width: 5px;
+       }
+    }
+}
+
+
+
+/*---------------------------summer-collection---------------------*/
+
+.summer-collection
+{
+    .summer-head
+    {
+       @extend .head;
+       h2 
+       {
+           line-height: 40px;
+           font-weight: $fontWight1;
+       }
+    }
+
+    .img-summer
+    {
+        position: relative;
+        overflow: hidden;
+        img
+        {
+              @include move(0.55s , all);  
+              overflow: hidden;  
+            
+        }
+
+        .cover 
+        {
+            background-color: rgba(252, 247, 247, 0.9);
+            z-index: 9999999999999;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 6.8vw;
+            opacity: 0;
+            @include move(0.55s , all);
+
+            h5
+            {
+                font-size: $fontSize1 + 2px;
+                font-family: $fontFamily3;
+                font-style: italic;
+                font-weight: $fontWight1;
+                position: relative;
+                left: 20px;
+                text-decoration: underline;
+                
+            }
+
+            .icons
+            {
+                position: absolute;
+                bottom: 2vw;
+                
+                display: flex;
+                justify-content: center;
+
+                .fa-heart
+                {
+                    font-size: $fontSize1 + 2px;
+                    padding-top: 15px;
+                }
+                .fa-shopping-bag
+                {
+                    font-size: $fontSize1 + 2px;
+                    padding-top: 15px;
+                }
+                .eyes
+                {
+                    font-size: $fontSize1 + 2px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    position: relative;
+                    top: 15px;
+                }
+            }
+        }
+        .content
+        {
+           text-align: center;
+           margin-top: 20px;
+
+           h5
+           {
+               @extend .h5;
+               margin-left: 0px;
+               font-weight: 600;
+               font-size: 13px;
+               padding-bottom: 4px;
+           }
+           a 
+           {
+               @extend .link;
+               margin-left: 0px;
+           }
+           .vote
+           {
+               font-family: $fontFamily3;
+               font-style: italic;
+               font-size: $fontSize1 + 2px;
+               font-weight: $fontWight1;
+               margin-top: -3px;
+           }
+        }
+
+        
+    }
+    .img-summer:hover .cover
+    {
+        opacity: 1;
+    }
+    
+
+    
+
+}
+
+
+/*---------------------------summer-collection---------------------*/
+
+
+
+@media (max-width : 992px) and (min-width : 768px)
+{
+   
+    .cover
+    {
+        bottom: 10vw !important;
+    }
+}
+
+@media (max-width : 768px) and (min-width : 576px)
+{
+   
+    .cover
+    {
+        bottom: 13vw !important;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width : 576px) and (min-width : 450px)
+{
+    .row
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .cover
+    {
+        bottom: 20vw !important;
+    }
+}
+
+
+
+
+
+@media (max-width : 450px)
+{
+    .cover
+    {
+        bottom: 25vw !important;
+    }
+}

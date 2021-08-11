@@ -1,0 +1,748 @@
+
+
+@import '../../colors/color';
+@import '../../font/font';
+@import '../../mixin/mxixn';
+@import '../../buttons/buttons';
+
+/*---------------------------header---------------------*/
+.header
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(../../../assets/images/About-us_title.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .head-content
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 
+        {
+            color: $bgColor;
+            font-size: $fontSize3;
+            font-family: $fontFamily2;
+            letter-spacing: 10px;
+            font-weight: $fontWight2;
+        }
+    }
+}
+/*---------------------------header---------------------*/
+
+
+/*---------------------------daily---------------------*/
+.dailys
+{
+    .daily-head 
+    {
+        @extend .head;
+    }
+
+    .daily-content
+    {
+        overflow: hidden;
+
+        img 
+        {
+            @include move(0.55s , all)
+        }
+        .daily-body
+        {
+            .a-body{
+                a 
+                {
+                   text-decoration: none;
+                   color: $thirdColor;
+                   font-size: $fontSize1 + 4px;
+                   font-family: $fontFamily3;
+                   font-style: italic;
+                   @include  move(0.55s , all)
+                }
+                a:hover 
+                {
+                   color: $firstColor;
+                }
+            }
+
+            h4 
+            {
+                font-size: $fontSize1 +1px;
+                font-family: $fontFamily2;
+                font-weight: $fontWight2;
+                letter-spacing: 6px;
+                padding-top: 10px;
+            }
+            p 
+            {
+                font-family: $fontFamily4;
+                font-size: 15px;
+                color: $thirdColor;
+                padding-bottom: 8px;
+            }
+
+            .buttons
+            {
+                font-family: $fontFamily3;
+                font-size: $fontSize1 + 2px ;
+                font-style: italic;
+                text-decoration: none;
+                color: $firstColor;
+                position: relative;
+                margin-bottom: -10px;
+
+            }
+
+            .befors::after
+            {
+               @extend .befors1; 
+               top: 20px !important; 
+            }
+            .befors:hover::after
+            {
+                @extend .befors2;
+            }
+        }
+    }
+
+    .daily-content:hover img 
+    {
+        transform: scale(1.1 , 1);
+        -webkit-transform: scale(1.1 , 1);
+        -moz-transform: scale(1.1 , 1);
+        -ms-transform: scale(1.1 , 1);
+        -o-transform: scale(1.1 , 1);
+}
+
+}
+
+/*---------------------------daily---------------------*/
+
+
+
+/*---------------------------play---------------------*/
+
+.play
+{
+    width: 100%;
+    height: 500px;
+    background-image: url(../../../assets/images/29.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+
+    .container-shape
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .shape-brdr
+        {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            .shape 
+            {
+               width: 5px;
+               height: 5px;
+               transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              -o-transform: rotate(45deg);
+              background-color: $bgColor;
+
+            }
+           p 
+           {
+              padding-top: 11px;
+              padding-left: 10px;
+              color: $bgColor;
+
+              font: {
+                  size: $fontSize2;
+                  family : $fontFamily3;
+                  weight : $fontWight1;
+              }
+             font-style: italic;
+            }
+        }
+
+
+
+
+        .shape-brdr::before
+        {
+            @extend .btn3;
+        }
+        .shape-brdr:hover::before
+        {
+            @extend .btn3;
+        }
+
+        .shape-brdr::after
+        {
+            @extend .btn3;
+        }
+        .shape-brdr:hover::after
+        {
+            @extend .btn3;
+        }
+    }
+
+
+}
+
+/*---------------------------play---------------------*/
+
+/*---------------------------beauty---------------------*/
+
+.beauty
+{
+    .col-md-3 
+    {
+        img 
+        {
+            cursor: pointer;
+            @include move(0.2s , all)
+        }
+        img:hover 
+        {
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+        }
+    }
+}
+
+/*---------------------------beauty---------------------*/
+
+
+
+
+/*-----------------------section elementor-section------------------*/
+
+.elementor-section
+{
+    width: 100%;
+    height: 680px;
+    background-color: #dfe8ec;
+
+    .img-position
+    {
+        position: relative;
+
+        .photo-img
+        {
+            .photo1
+            {
+                width: 60%;
+                position: absolute;
+                top: 14%;
+                left: 50%;
+            }
+            .photo2
+            {
+                width: 100%;
+                position: absolute;
+                bottom: -10%;
+                left: 10%;
+            }
+        }
+
+        .shape-img
+        {
+           position: relative;
+           right: 150px;
+           .shape2
+            {
+              position: absolute;
+              left: 40px;
+            }
+
+        }
+
+
+        .butterfly
+        {
+            .butterflys
+            {
+                position: absolute;
+                bottom: -53%;
+                left: -8vw;
+            }
+            
+        }
+    }
+    .shape-content
+    {
+        position: relative;
+        margin-left: 5vw;
+        padding-top: 50px;
+        margin-top: 20px;
+
+        .p-head
+        {
+            font-size: $fontSize3;
+            font-family: $fontFamily1;
+            font-style: italic;
+            color: #EF5B47;
+        }
+        h2 
+        {
+            font-size: $fontSize3 ;
+            font-family: $fontFamily2;
+            letter-spacing: 11px;
+            color: $firstColor;
+            text-transform: uppercase;
+            padding-top: 20px;
+            margin-left: -10vw;
+        }
+        .p-body
+        {
+            padding-left: 15px;
+            font-family: $fontFamily4;
+            padding-top: 20px;
+            color: rgb(139, 139, 139);
+            font-size: $fontSize1 + 3px;
+            line-height: 30px;
+        }
+        button 
+        {
+            @extend .btn1;
+            color: $firstColor;
+            background-color: transparent;
+            padding: 15px 45px;
+            margin-left: 15px;
+            border: 0.1vw solid rgb(48, 47, 47);
+            text-transform: capitalize;
+            font-family: $fontFamily3;
+
+            @include move(.55s , all)
+        }
+
+        button:hover
+        {
+            background-color:  $firstColor;
+            color: #dfe8ec;
+        }
+    }
+}
+
+
+
+/*-----------------------section elementor-section------------------*/
+
+
+
+
+/*---------------------------carousel---------------------*/
+
+.carousel
+{
+
+    .head-content 
+    {
+        @extend .head;
+    }
+
+
+    .row
+    {
+        img 
+       {
+         width: 90%;
+         position: relative;
+       }
+
+
+       .cover
+       {
+          width: 90%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center; 
+          opacity: 0;
+          @include move(0.55s , all)
+       }
+       .cover:hover
+       {
+           opacity: 1;
+       }
+
+      
+    }
+}
+
+
+/*---------------------------carousel---------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------media 1200 to 1000---------------------------------*/
+
+@media (max-width :1200px) and (min-width : 1000px)
+{
+    .elementor-section
+    {
+        .img-position
+        {
+            .butterflys
+            {
+                width: 15%;
+            }
+        }
+        .shape-content
+        {
+            h2
+            {
+                font-size: $fontSize2 + 5px;
+            }
+            .p-body
+            {
+                font-size: 15px;
+                br 
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/*-------------------------------------media 1000 to 850---------------------------------*/
+
+
+@media (max-width :1000px) and (min-width : 850px)
+{
+   .elementor-section
+    {
+        height: 640px;
+        .img-position
+        {
+            right: 10vw;
+            .butterflys
+            {
+                width: 15%;
+            }
+        }
+        .shape-content
+        {
+            right: 10vw;
+            margin-top: -3vw !important;
+            h2
+            {
+                font-size: $fontSize2 + 5px;
+                width: 100%;
+            }
+            .p-body
+            {
+                font-size: 15px;
+                width: 100% !important;
+                br 
+                {
+                    display: none;
+                }
+            }
+        }
+    }   
+}
+
+
+/*-------------------------------------media 1000 to 850---------------------------------*/
+
+
+
+
+
+/*-------------------------------------media 850 to 768---------------------------------*/
+
+
+@media (max-width :850px) and (min-width : 768px)
+{
+    .elementor-section
+    {
+        height: 640px;
+        .img-position
+        {
+            right: 10vw;
+            .butterflys
+            {
+                width: 15%;
+            }
+        }
+        .shape-content
+        {
+            right: 10vw;
+            margin-top: -3vw !important;
+            h2
+            {
+                font-size: $fontSize2 + 5px;
+                width: 100%;
+            }
+            .p-body
+            {
+                font-size: 15px;
+                width: 100% !important;
+                br 
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------------------------------media 850 to 768---------------------------------*/
+
+
+/*-------------------------------------media 768 to 576---------------------------------*/
+
+@media (max-width :768px) and (min-width : 576px)
+{
+    .elementor-section
+    {
+        height: auto;
+        .img-position
+        {
+            right: 10vw;
+            .butterflys
+            {
+                width: 15%;
+            }
+        }
+        .shape-content
+        {
+            right: 10vw;
+            margin-top: -3vw !important;
+            h2
+            {
+                font-size: $fontSize2 + 5px;
+                width: 100%;
+                margin-left: 0vw;
+            }
+            .p-body
+            {
+                font-size: 15px;
+                width: 100% !important;
+                br 
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+    .beauty
+    {
+       .row
+       {
+           margin: auto;
+       }
+        img 
+        {
+            margin: auto;
+        }
+    }
+}
+
+
+/*-------------------------------------media 768 to 576---------------------------------*/
+
+
+
+
+/*-------------------------------------media 768 to 450--------------------------------*/
+
+
+@media (max-width :576px) and (min-width : 450px)
+{
+   .elementor-section
+    {
+        overflow-x: hidden;
+        height: auto;
+        .img-position
+        {
+            right: 10vw;
+            .butterflys
+            {
+                width: 15%;
+            }
+        }
+        .shape-content
+        {
+            margin-top: -3vw !important;
+            h2
+            {
+                margin-left: 4vw;
+                font-size: $fontSize2 + 5px;
+                width: 100%;
+            }
+            .p-body
+            {
+                font-size: 15px;
+                width: 100% !important;
+                br 
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .daily
+    {
+        .row 
+        {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+        .daily-content 
+        {
+            
+            img 
+            {
+                width: 100%;
+            }
+        }
+    }
+
+    .carousel
+    {
+        .row
+        {
+            .col-12 
+            {
+                width: 100%;
+                height: 100%;
+                img 
+                {
+                    margin: auto !important;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+/*-------------------------------------media 768 to 450---------------------------------*/
+
+
+
+/*-------------------------------------media  max-width 450---------------------------------*/
+
+@media (max-width : 450px)
+{
+   .elementor-section
+    {
+        overflow-x: hidden;
+        height: auto;
+        .img-position
+        {
+            right: 10vw;
+            .butterflys
+            {
+                width: 15%;
+            }
+        }
+        .shape-content
+        {
+            margin-top: -3vw !important;
+            h2
+            {
+                margin-left: 4vw;
+                font-size: $fontSize2 + 5px;
+                width: 100%;
+            }
+            .p-body
+            {
+                font-size: 15px;
+                width: 100% !important;
+                br 
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .daily
+    {
+        .row 
+        {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+    
+        }
+        .daily-content 
+        {
+            
+            img 
+            {
+                width: 100%;
+            }
+        }
+    }
+    
+    .carousel
+    {
+        .row
+        {
+            .col-12 
+            {
+                width: 100%;
+                height: 100%;
+                img 
+                {
+                    margin: auto !important;
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------media  max-width 450---------------------------------*/

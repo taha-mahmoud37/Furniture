@@ -1,0 +1,724 @@
+
+
+<!--------------------------header cover------------------->
+<header>
+    <nz-carousel nzAutoPlay [nzDots] = "true" [nzAutoPlaySpeed] = "5000" class="container-cover" >
+        <div nz-carousel-content *ngFor="let index of array , let i = index">
+          <img [src]="index" alt="cover">
+          <div  class="content" *ngFor= "let cont of content1 , let j = index">
+              <div class="center" *ngIf = " j == i">
+                  <div>
+                    <p data-aos="fade-up" data-aos-duration="1000">{{cont.pContent}}</p>
+                    <h1 data-aos="fade-up" data-aos-duration="2000">{{cont.hContent}}</h1>
+                    <button class="btn" data-aos="fade-up" data-aos-duration="3000">Get Konset</button>
+                    <button class="btn" data-aos="fade-up" data-aos-duration="3000">Read More</button>
+                  </div>
+              </div>
+       
+           </div>
+        </div>
+        
+        
+      </nz-carousel>
+    
+      
+</header>
+ <!-------------------header cover----------------------->
+
+
+
+ <!-------------------section home slidrt --------------------------->
+ <section class="container py-5 container-img ">
+     <div class="row">
+         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000" >
+             <div class="img-slider">
+
+
+                
+                <owl-carousel-o [options]="customOptions">
+                  <ng-template carouselSlide>
+                      <img src="assets/images/5.jpg" class="img-fluid" alt="chair">
+                      <div class="posit">
+                          <div>
+                              <h5>Armchair</h5>
+                              <a href="#">Handmade</a>
+                          </div>
+                          <p>$40.00</p>
+                      </div>
+                  </ng-template>  
+                  <ng-template carouselSlide>
+                    <img src="assets/images/6.jpg" class="img-fluid" alt="chair">
+                    <div class="posit">
+                        <div>
+                            <h5>Wood</h5>
+                            <a href="#">chair</a>
+                        </div>
+                        <p style="margin-left: 30px;">$55.00</p>
+                    </div>
+                  </ng-template>  
+                  <ng-template carouselSlide>
+                    <img src="assets/images/7.jpg" class="img-fluid" alt="chair">
+                    <div class="posit">
+                        <div>
+                            <h5>Chair</h5>
+                            <a href="#">Art</a>
+                        </div>
+                        <p style="margin-left: 30px;">$30.00</p>
+                    </div>
+                  </ng-template>  
+                </owl-carousel-o>
+              
+
+
+             </div>
+         </div>
+         <div class="col-lg-6 pt-5 box-cont" data-aos="fade-left" data-aos-duration="1000" >
+             <div class="img-box">
+                 <img src="assets/images/8.jpg" alt="" class="img-fluid"> 
+                 <div class="img-content">
+                     <h3>Ceramics Blog	</h3>
+                     <a class="befors" href="#">Shop Now</a>
+                 </div>
+                 <div class="vote">
+                    -25% off
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+ 
+ <!-------------------section home slider2 --------------------------->
+
+
+
+
+ <!-------------------section home slider2 --------------------------->
+ <section class="container py-5 container-img mb-5">
+    <div class="row">
+        
+        <div class="col-lg-6 pt-5 box-cont mb-5" data-aos="fade-left" data-aos-duration="1000">
+            <div class="img-box">
+                <img src="assets/images/9.jpg" alt="" class="img-fluid"> 
+                <div class="img-content">
+                    <h3>Ceramics Blog	</h3>
+                    <a class="befors" href="#">Shop Now</a>
+                </div>
+                <div class="vote">
+                   -25% off
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end mb-5" data-aos="fade-right" data-aos-duration="1000">
+            <div class="img-slider">
+
+
+               
+               <owl-carousel-o [options]="customOptions">
+                 <ng-template carouselSlide>
+                     <img src="assets/images/11.jpg" class="img-fluid" alt="chair">
+                     <div class="posit">
+                         <div>
+                             <h5>lecy tree</h5>
+                             <a href="#">Seed Plant</a>
+                         </div>
+                         <p>$30.00</p>
+                     </div>
+                 </ng-template>  
+                 <ng-template carouselSlide>
+                   <img src="assets/images/10.jpg" class="img-fluid" alt="chair">
+                   <div class="posit">
+                       <div>
+                           <h5>ficus</h5>
+                           <a href="#">Seed Plant</a>
+                       </div>
+                       <p style="margin-left: 30px;">$15.00</p>
+                   </div>
+                 </ng-template>  
+                 <ng-template carouselSlide>
+                   <img src="assets/images/12.jpg" class="img-fluid" alt="chair">
+                   <div class="posit">
+                       <div>
+                           <h5>Cactus</h5>
+                           <a href="#">Succulent</a>
+                       </div>
+                       <p style="margin-left: 30px;">$28.00</p>
+                   </div>
+                 </ng-template>  
+               </owl-carousel-o>
+             
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-------------------section home slider2 --------------------------->
+
+
+
+<!-------------------section elementor-section slider2 --------------------------->
+
+<section class="elementor-section mt-5 py-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-position">
+                    <div class="shape-img">
+                        <img src="assets/images/13.png" data-aos="fade-up" data-aos-duration="1000"  alt="shape" class="img-fluid">
+                        <img src="assets/images/14.png" data-aos="fade-up" data-aos-duration="1200" alt="shape" class="img-fluid shape2">
+                    </div>
+                    <div class="photo-img">
+                        <img src="assets/images/17.jpg" data-aos="fade-up" data-aos-duration="1500" alt="chair" class="img-fluid photo1">
+                        <img src="assets/images/16.jpg" data-aos="fade-up" data-aos-duration="2000" alt="chair" class="img-fluid photo2">
+                    </div>
+                    <div class="butterfly">
+                        <img src="assets/images/18.png" data-aos="fade-up" data-aos-duration="1400"  alt="butterfly" class="butterflys img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="shape-content">
+                    <p class="p-head" data-aos="fade-up" data-aos-duration="1000">Inspiration</p>
+                    <h2 data-aos="fade-left" data-aos-duration="15000">think different</h2>
+                    <p class="text-white p-body" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa eligendi <br> dolore a maxime tempore quas hic omnis, 
+                        doloribus recusandae <br> corporis  possimus at eius officiis 
+                        sint alias natus aliquid consequuntur.
+                    </p>
+                    <button data-aos="fade-right" data-aos-duration="1000">read more</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-------------------section elementor-section  --------------------------->
+
+
+<!-------------------section Summer Collection -------------------------------->
+
+<section class="summer-collection py-5">
+    <div class="summer-head pt-5" data-aos="zoom-in" data-aos-duration="800">
+        <div>
+            <p>Summer Collection</p>
+            <h2>MINIMAL & SIMPLE DESIGN</h2>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="row row-cols-2 row-cols-lg-5 row-cols-md-4 mb-5" data-aos="zoom-in-up" data-aos-duration="1500">
+            <div class="col mb-5">
+                <div class="img-summer">
+                    <img src="assets/images/7.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>Chair</h5>
+                            <a href="#">Art</a>
+                        </div>
+                        <div class="vote">$30.00</div>
+                    </div>
+
+                    <div class="new">New</div>
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/10.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>ficus</h5>
+                            <a href="#">Seed Plant</a>
+                        </div>
+                        <div class="vote">$15.00</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/19.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>wall art</h5>
+                            <a href="#">Art - Style</a>
+                        </div>
+                        <div class="vote">$46.00</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/20.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>tea kettle</h5>
+                            <a href="#">Home</a>
+                        </div>
+                        <div class="vote">$26.00</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/21.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>desk decor</h5>
+                            <a href="#">Home</a>
+                        </div>
+                        <div class="vote">$45.00</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/5.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>arnchair</h5>
+                            <a href="#">Handmade</a>
+                        </div>
+                        <div class="vote">$40.00</div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/23.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>basket</h5>
+                            <a href="#">home</a>
+                        </div>
+                        <div class="vote">
+                            <p>$16.00</p>
+                            <p class="sale-cont">$20.00</p>
+                        </div>
+                    </div>
+                    <div class="sale">Sale</div>
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/24.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>vase</h5>
+                            <a href="#">Inside - Style</a>
+                        </div>
+                        <div class="vote">$19.00</div>
+                    </div>
+                    <div class="sold">Sold</div>
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/26.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>bed table</h5>
+                            <a href="#">Style</a>
+                        </div>
+                        <div class="vote">$36.00</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col mb-4">
+                <div class="img-summer">
+                    <img src="assets/images/12.jpg" alt="chair" class="img-fluid">
+                    <div class="cover">
+                        <h5>
+                            Add To Card
+                        </h5>
+                        <div class="icons">
+                            <i class="far fa-heart"></i>
+                            <i nz-icon nzType="eye" class="eyes" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                    <div class="content d-flex justify-content-between">
+                        <div>
+                            <h5>cactus</h5>
+                            <a href="#">Succulents</a>
+                        </div>
+                        <div class="vote">$28.00</div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</section>
+
+<!-------------------section Summer Collection --------------------------------->
+
+
+
+<!-------------------section Play --------------------------------->
+
+<section class="container play mt-5 mb-5">
+
+    <div class="container-shape">
+        <div class="shape-brdr">
+            <div class="shape"></div>
+            <p>Play</p>
+
+        </div>
+
+    </div>
+    
+</section>
+
+
+
+
+<!-------------------section Play --------------------------------->
+
+
+<!-------------------section icons --------------------------------->
+
+<section class="icons-section py-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-3 mb-3" data-aos="fade-right" data-aos-duration="800">
+                <div class="icon-content ">
+                    <img src="assets/images/30.png" class="img-fluid" alt="icons">
+                    <div class="contents">
+                        <h5>24H SERVICE</h5>
+                        <a class="befors1" href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-duration="800">
+                <div class="icon-content ">
+                    <img src="assets/images/32.png" class="img-fluid" alt="icons">
+                    <div class="contents cont1">
+                        <h5>FREE RETURNS</h5>
+                        <a class="befors1" href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-duration="800">
+                <div class="icon-content ">
+                    <img src="assets/images/33.png" class="img-fluid img-left" alt="icons">
+                    <div class="contents cont2">
+                        <h5>ORDER TRACKING</h5>
+                        <a class="befors1" href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3" data-aos="fade-left" data-aos-duration="800">
+                <div class="icon-content ">
+                    <img src="assets/images/31.png" class="img-fluid" alt="icons">
+                    <div class="contents">
+                        <h5>FAST DELIVERY</h5>
+                        <a class="befors1" href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+<!-------------------section icons --------------------------------->
+
+
+
+
+<!-------------------section daily --------------------------------->
+
+<section class="daily container py-5">
+    <div class="daily-head pt-5" >
+        <div data-aos="fade-up" data-aos-duration="800">
+            <p>Daily Dose of Tips</p>
+            <h2>READ OUR BLOG</h2>
+        </div>
+    </div>
+    <div class="row py-5">
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+            <div class="daily-content">
+                <img src="assets/images/34.jpg" class="img-fluid" alt="woman">
+                <div class="daily-body pt-4 mt-2">
+                    <div class="a-body">
+                        <a href="#">Tables, </a>
+                        <a href="#">Wall Plates - </a>
+                        <a href="#">March 27, 2020</a>
+                    </div>
+                    <h4>THINKING OF A PLACE</h4>
+                    <p>Lorem ipsum dolor sit amet, debet consulatu ne vix, 
+                        vel ut iusto postea, hinc choro per id. Vide
+                    </p>
+                    <a href="#" class="buttons befors">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="daily-content">
+                <img src="assets/images/35.jpg" class="img-fluid" alt="woman">
+                <div class="daily-body pt-4 mt-2">
+                    <div class="a-body">
+                        <a href="#">Wall Plates - </a>
+                        <a href="#">April 9, 2020</a>
+                    </div>
+                    <h4>PERFECT DECORATION</h4>
+                    <p>Lorem ipsum dolor sit amet, debet consulatu ne vix, 
+                        vel ut iusto postea, hinc choro per id. Vide
+                    </p>
+                    <a href="#" class="buttons befors">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4" data-aos="fade-left" data-aos-duration="1000">
+            <div class="daily-content">
+                <img src="assets/images/36.jpg" class="img-fluid" alt="woman">
+                <div class="daily-body pt-4 mt-2">
+                    <div class="a-body">
+                        <a href="#">Wall Plates - </a>
+                        <a href="#">April 9, 2020</a>
+                    </div>
+                    <h4>INTERIOR DESIGN STYLE</h4>
+                    <p>Lorem ipsum dolor sit amet, debet consulatu ne vix, 
+                        vel ut iusto postea, hinc choro per id. Vide
+                    </p>
+                    <a href="#" class="buttons befors">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-------------------section daily --------------------------------->
+
+
+<!-------------------section free --------------------------------->
+
+<section class="free">
+    <div>
+        <h3>
+            Free Shipping On $75+
+        </h3>
+    </div>
+</section>
+
+<!-------------------section free --------------------------------->
+
+
+
+
+<!-------------------section beauty --------------------------------->
+
+<div class="beauty py-5 container">
+    <div class="row">
+        <div class="col-md-3 mb-3" data-aos="fade-left" data-aos-duration="800">
+            <div>
+                <img src="assets/images/Clients-1.png" class="img-fluid" alt="client">
+            </div>
+        </div>
+        <div class="col-md-3 mb-3" data-aos="fade-left" data-aos-duration="1000">
+            <div>
+                <img src="assets/images/Clients-2.png" class="img-fluid" alt="client">
+            </div>
+        </div>
+        <div class="col-md-3 mb-3" data-aos="fade-left" data-aos-duration="1200">
+            <div>
+                <img src="assets/images/Clients-3.png" class="img-fluid" alt="client">
+            </div>
+        </div>
+        <div class="col-md-3 mb-3" data-aos="fade-left" data-aos-duration="1400">
+            <div>
+                <img src="assets/images/home2-clients.png" class="img-fluid" alt="client">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------section beauty --------------------------------->
+
+
+
+
+<!-------------------section carousel --------------------------------->
+<section class="container py-5 carousel">
+    <div class="head-content">
+        <div data-aos="fade-down" data-aos-duration="800">
+            <p>Stay Up to Date</p>
+            <h2>JOIN OUR NEWSLETTER</h2>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+            <owl-carousel-o [options]="customCarousel">
+                <ng-template carouselSlide>
+                    <img src="assets/images/insta.png" class="img-fluid" alt="chair">  
+                    <div class="cover">
+                        <i class="fab fa-instagram text-white"></i>
+                    </div>
+                </ng-template>  
+                <ng-template carouselSlide>
+                  <img src="assets/images/insta-1.jpg" class="img-fluid img2" alt="chair">
+                  <div class="cover">
+                     <i class="fab fa-instagram text-white"></i>
+                  </div>
+                </ng-template>  
+                <ng-template carouselSlide>
+                  <img src="assets/images/insta2.png" class="img-fluid img1" alt="chair">
+                  <div class="cover">
+                     <i class="fab fa-instagram text-white"></i>
+                  </div>
+                </ng-template>  
+                <ng-template carouselSlide>
+                    <img src="assets/images/insta-3.jpg" class="img-fluid img2" alt="chair">
+                    <div class="cover">
+                        <i class="fab fa-instagram text-white"></i>
+                     </div>
+                </ng-template> 
+                <ng-template carouselSlide>
+                    <img src="assets/images/insta4.png" class="img-fluid img1" alt="chair">
+                    <div class="cover">
+                        <i class="fab fa-instagram text-white"></i>
+                     </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <img src="assets/images/insta-5.jpg" class="img-fluid img2" alt="chair">
+                    <div class="cover">
+                        <i class="fab fa-instagram text-white"></i>
+                     </div>
+                </ng-template>
+
+              </owl-carousel-o>
+        </div>
+    </div>
+
+</section>
+
+
+<!-------------------section carousel --------------------------------->
+
+
+
+
+
+
+
+

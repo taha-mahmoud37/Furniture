@@ -1,0 +1,11 @@
+
+@mixin move($time , $property) {
+
+    
+    transition:$time $property;
+    -webkit-transition:$time $property;
+    -moz-transition:$time $property;
+    -ms-transition:$time $property;
+    -o-transition:$time $property;
+    
+}

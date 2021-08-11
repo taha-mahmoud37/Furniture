@@ -1,0 +1,193 @@
+
+@import '../colors/color';
+@import '../font/font';
+@import '../mixin/mxixn';
+@import '../buttons/buttons';
+@import '../general_scss/general.scss';
+
+/*---------------------------header---------------------*/
+.header
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(../../assets/images/Contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .head-content
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 
+        {
+            color: $bgColor;
+            font-size: $fontSize3;
+            font-family: $fontFamily2;
+            letter-spacing: 10px;
+            font-weight: $fontWight2;
+        }
+    }
+}
+/*---------------------------header---------------------*/
+
+
+
+
+
+
+
+
+
+
+/*---------------------------contact---------------------*/
+
+.contact
+{
+    .contact-body
+    {
+        .p-head
+        {
+            font-family: $fontFamily3;
+            color: $thirdColor;
+            font-size: $fontSize1 + 3px;
+            font-style: italic;
+            padding-bottom: 10px;
+        }
+
+        h2 
+        {
+            font-size: $fontSize2 + 4px;
+            font-family: $fontFamily2;
+            font-weight: $fontWight2;
+            letter-spacing: 5px;
+        }
+
+        .p-body
+        {
+            font-size: $fontSize1 + 2px;
+            font-family: $fontFamily4;
+            color: $thirdColor;
+            line-height: 30px;
+        }
+
+        .order
+        {
+            p 
+            {
+                font-size: $fontSize1;
+                font-family: $fontFamily2;
+                font-weight: 600;
+                letter-spacing: 3px;
+                padding-bottom: 10px;
+            }
+            ul 
+            {
+                li 
+                {
+                    a 
+                    {
+                        text-decoration: none;
+                        color: $thirdColor;
+                        font-size: 15px;
+                        font-family: $fontFamily4;
+                        padding-bottom: 20px;
+                    }
+                    a:hover 
+                    {
+                        color: #acabab;
+                    }
+                }
+            }
+        }
+
+        .icon-footer
+            {
+                margin-top: 30px !important;
+                i 
+                {
+                    margin-left: -2px;
+                    margin-right: 20px;
+                    font-size: $fontSize1 + 4px;
+                    @include move(0.55s , all);
+                    color: $thirdColor;
+                    
+                    
+                   }
+
+                .fab:nth-child(1):hover
+                {
+                    color: #4267B2;
+                    
+                }
+                .fab:nth-child(2):hover
+                {
+                    color: #FCAF45;
+             
+                }
+                .fab:nth-child(3):hover
+                {
+                    color: #1DA1F2;
+                 
+
+                }
+                .fab:nth-child(4):hover
+                {
+                    color: #FF0000;
+                
+                }
+            }
+    }
+
+    .form-group
+    {
+        input 
+        {
+            @extend .input-contact;
+        }
+        ::placeholder
+        {
+            color: $thirdColor;
+        }
+    }
+    .text-area
+    {
+        width: 100%;
+        height: 250px;
+        outline: none;
+        @extend .input-contact;
+    }
+    .text-area::placeholder
+    {
+        color: $thirdColor;
+    }
+
+    button 
+        {
+            @extend .btn1;
+            color: $firstColor;
+            background-color: transparent;
+            padding: 15px 65px;
+            margin-right: 0px;
+            border: 0.1vw solid rgb(126, 124, 124);
+            text-transform: capitalize;
+            font-family: $fontFamily3;
+
+            @include move(.55s , all)
+        }
+
+        button:hover
+        {
+            background-color:  $firstColor;
+            color: $bgColor;
+        }
+}
+
+
+
+
+
+/*---------------------------contact---------------------*/
+

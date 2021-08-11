@@ -1,0 +1,142 @@
+
+@import '../colors/color';
+@import '../font/font';
+@import '../buttons/buttons';
+@import '../mixin/mxixn';
+
+
+
+footer
+{
+    .footer-head
+    {
+        width: 100%;
+        height: 430px;
+        background-color: #f4f2f2;
+
+        .footer-content 
+        {
+            h4 
+            {
+                font-size: $fontSize1;
+                font-family: $fontFamily2;
+                font-weight: $fontWight2;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            ul 
+            {
+                list-style: none;
+                margin-bottom: 10px;
+                li 
+                {
+                    margin-left: -34px;
+                    margin-bottom: 10px;
+                    a 
+                    {
+                        text-decoration: none;
+                        color: $thirdColor;
+                        font-size: $fontSize1 + 2px;
+                        font-family: $fontFamily3;
+                        text-transform: capitalize;
+                    }
+
+                    a:hover 
+                    {
+                        color: #acabab;
+                    }
+                    
+                }
+            }
+            .icon-footer
+            {
+                margin-top: 30px !important;
+                i 
+                {
+                    margin-left: -2px;
+                    margin-right: 20px;
+                    font-size: $fontSize1 + 4px;
+                    @include move(0.55s , all);
+                    color: $thirdColor;
+                    
+                    
+                   }
+
+                .fab:nth-child(1):hover
+                {
+                    color: #4267B2;
+                    
+                }
+                .fab:nth-child(2):hover
+                {
+                    color: #FCAF45;
+             
+                }
+                .fab:nth-child(3):hover
+                {
+                    color: #1DA1F2;
+                 
+
+                }
+                .fab:nth-child(4):hover
+                {
+                    color: #FF0000;
+                
+                }
+            }
+        }
+
+        
+    }
+
+    .footer-body
+    {
+        padding: 15px;
+
+        h3 
+        {
+             font-size: $fontSize1 + 4px;
+             font-family: $fontFamily3;
+             font-style: italic;
+             color: $thirdColor;
+             cursor: pointer;
+        }
+            
+    }
+    
+}
+
+@media (max-width :992px) and (min-width : 768px)
+{
+    .footer-head
+    {
+        height: auto !important;
+    }
+}
+
+
+@media (max-width :768px) and (min-width : 576px)
+{
+    .footer-head
+    {
+        height: auto !important;
+    }
+}
+
+@media (max-width :576px) and (min-width : 450px)
+{
+    .footer-head
+    {
+        height: auto !important;
+    }
+}
+
+
+@media  (max-width : 450px)
+{
+    .footer-head
+    {
+        height: auto !important;
+    }
+}
+

@@ -1,0 +1,446 @@
+
+
+.btn1
+{
+    color: $bgColor;
+    border:solid 0vw rgb(216, 215, 215);
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    padding:9px 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+    outline: none;
+    box-shadow: none;
+    font-family: $fontFamily3;
+    font-size: $fontSize1 + 4px;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    background-color: rgb(248, 247, 247 , 0.3);
+}
+
+.btn2::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 0.2vw solid transparent;
+}
+
+
+.btn2:hover::before
+{
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    
+    
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+        border-top-color: rgb(252, 249, 249);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    50% {
+        width: 100%;
+        height: 0px;
+        border-top-color: rgb(252, 249, 249);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: rgb(252, 249, 249);
+        border-left-color: transparent;
+        border-right-color:rgb(252, 249, 249);
+        border-bottom-color: transparent;
+    }
+    
+}
+
+
+
+
+.btn2::after
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 0.2vw solid transparent;
+}
+
+.btn2:hover::after
+{
+    animation-name: animate2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+
+@keyframes animate2 {
+    0% {
+        width: 0px;
+        height: 0px;
+        border-top-color: transparent;
+        border-left-color: rgb(252, 249, 249);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    50% {
+        width: 0px;
+        height: 100%;
+        border-top-color: transparent;
+        border-left-color: rgb(252, 249, 249);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-left-color: rgb(252, 249, 249);
+        border-right-color: transparent;
+        border-bottom-color:rgb(252, 249, 249) ;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.befors1::after
+{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 30px;
+    left: 0px;
+    border: 0.1vw solid transparent;
+}
+
+.befors2:hover::after
+{
+  animation-name: brdr;
+  animation-duration: 0.33s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes brdr {
+  0% {
+      width: 0px;
+      height: 0px;
+      border-top-color: $firstColor;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+  }
+  100% {
+      width: 100%;
+      height: 0px;
+      border-top-color: $firstColor;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.link
+{
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+    bottom: 15px;
+    color: $thirdColor;
+    font-family: $fontFamily3;
+    font-size: $fontSize1 ;
+
+}
+
+
+.h5 
+{
+    font: {
+                weight: $fontWight1 ;
+                family: $fontFamily2;
+                size: $fontSize1 - 3px;
+          }
+            margin-left: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+.new1
+{
+    padding: 5px;
+    z-index: 11111;
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: red;
+    font-size: 13px;
+    font-family: $fontFamily2;
+    font-style: italic;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+.btn3::before
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 0.2vw solid transparent;
+   
+}
+
+
+.btn3:hover::before
+{
+    animation-name: animate4;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+    
+}
+
+@keyframes animate4 {
+    0% {
+        width: 0px;
+        height: 0px;
+        border-top-color: rgb(252, 249, 249);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    50% {
+        width: 100%;
+        height: 0px;
+        border-top-color: rgb(252, 249, 249);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: rgb(252, 249, 249);
+        border-left-color: transparent;
+        border-right-color:rgb(252, 249, 249);
+        border-bottom-color: transparent;
+    }
+    
+}
+
+
+
+
+.btn3::after
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 0.2vw solid transparent;
+}
+
+.btn3:hover::after
+{
+    animation-name: animate3;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+
+@keyframes animate3 {
+    0% {
+        width: 0px;
+        height: 0px;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(252, 249, 249);
+    }
+    50% {
+        width: 0px;
+        height: 100%;
+        border-top-color: transparent;
+        border-left-color: rgb(252, 249, 249);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-left-color: rgb(252, 249, 249);
+        border-right-color: transparent;
+        border-bottom-color:rgb(252, 249, 249) ;
+    }
+    
+}
+
+
+
+
+.befors3::after
+{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 20px;
+    left: 0px;
+    border: 0.1vw solid transparent;
+}
+
+.befors4:hover::after
+{
+  animation-name: brdr1;
+  animation-duration: 0.33s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes brdr1 {
+  0% {
+      width: 0px;
+      height: 0px;
+      border-top-color: $bgColor;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+  }
+  100% {
+      width: 100%;
+      height: 0px;
+      border-top-color: $bgColor;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+  }
+}
+
+
+
+.head
+{
+    text-align: center;
+    p 
+    {
+        font-family: $fontFamily1;
+        font-style: italic;
+        font-size: $fontSize1 + 5px;
+        color: $thirdColor;
+    }
+    h2
+    {
+        font-size: $fontSize2 + 5px;
+        font-family: $fontFamily2;
+        letter-spacing: 8px;
+        padding-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+.input-contact
+{
+        box-shadow: none;
+        border: 0;
+        color: $thirdColor;
+        border: 1px solid #ddd;
+        border-radius: 0%;
+        -webkit-border-radius: 0%;
+        -moz-border-radius: 0%;
+        -ms-border-radius: 0%;
+        -o-border-radius: 0%;
+        font-family: $fontFamily3;
+        font-style: italic;
+        padding: 10px 20px;
+        font-size: $fontSize1 + 3px;
+}

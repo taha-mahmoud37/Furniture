@@ -1,0 +1,177 @@
+@import '../../colors/color';
+@import '../../font/font';
+@import '../../mixin/mxixn';
+@import '../../buttons/buttons';
+
+
+.header
+{
+    width: 100%;
+    height: 60px;
+    background-color: #f4f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .head-content
+    {
+       a 
+       {
+          color: $thirdColor;
+          font-family: $fontFamily3;
+          font-style: italic;
+          font-size: $fontSize1 + 2px;
+          font-weight: 400;
+       }
+       a:nth-child(1):hover
+       {
+           text-decoration: underline;
+       }
+       span 
+       {
+           display: inline-block;
+           color: $thirdColor;
+           padding: 10px;
+           width: 5px;
+       }
+    }
+}
+
+
+
+
+/*---------------------------summer-collection---------------------*/
+
+.summer-collection
+{
+    .summer-head
+    {
+       @extend .head;
+    }
+
+    .img-summer
+    {
+        position: relative;
+        overflow: hidden;
+        img
+        {
+              @include move(0.55s , all);  
+              overflow: hidden;  
+            
+        }
+
+        .cover 
+        {
+            background-color: rgba(252, 247, 247, 0.9);
+            z-index: 9999999999999;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 4vw;
+            opacity: 0;
+            @include move(0.55s , all);
+
+            h5
+            {
+                font-size: $fontSize1 + 2px;
+                font-family: $fontFamily3;
+                font-style: italic;
+                font-weight: $fontWight1;
+                position: relative;
+                left: 20px;
+                text-decoration: underline;
+            }
+
+            .icons
+            {
+                position: absolute;
+                top: 1vw;
+                left: 2vw;
+
+                .fa-heart
+                {
+                    font-size: $fontSize1 + 2px;
+                    padding-top: 15px;
+                }
+                .eyes
+                {
+                    font-size: $fontSize1 + 2px;
+                    margin-left: 20px;
+                    position: relative;
+                    bottom: 5px;
+                }
+            }
+        }
+        .content
+        {
+           position: relative;
+           bottom: 6vw;
+           padding: 0px 20px;
+           z-index: 9999999999;
+
+           h5
+           {
+               @extend .h5;
+               margin-left: 0px;
+           }
+           a 
+           {
+               @extend .link;
+               margin-left: 0px;
+           }
+           .vote
+           {
+               font-family: $fontFamily3;
+               font-style: italic;
+               font-size: $fontSize1;
+               font-weight: $fontWight1;
+               padding-right: 20px;
+           }
+        }
+
+        
+    }
+    .img-summer:hover .cover
+    {
+        opacity: 1;
+    }
+    
+
+    
+
+}
+
+
+/*---------------------------summer-collection---------------------*/
+
+@media (max-width : 576px) and (min-width : 450px)
+{
+    .row
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .content
+        {
+          
+           bottom: 13vw !important; 
+           
+        }
+}
+
+
+
+
+
+@media (max-width : 450px)
+{
+    .content
+        {
+          
+           bottom: 15vw !important;  
+        }
+}

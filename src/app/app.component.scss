@@ -1,0 +1,39 @@
+
+@import './colors/color';
+@import './font/font';
+@import './mixin/mxixn';
+
+
+.btn
+{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 5px 12;
+    color: #ccc;
+    border: 0;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    box-shadow: none;
+    z-index: 9999999999999;
+    opacity: 0;
+
+    i
+    {
+        font-size: 24px;
+    }
+
+
+
+}
+
+.btn-cont
+{
+    opacity: 1;
+
+}

@@ -1,0 +1,271 @@
+
+
+
+@import '../../colors/color';
+@import '../../font/font';
+@import '../../mixin/mxixn';
+@import '../../buttons/buttons';
+
+
+/*---------------------------header---------------------*/
+.header
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(../../../assets/images/Pricing_plan-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+
+    .head-content
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 
+        {
+            font-size: $fontSize3;
+            font-family: $fontFamily2;
+            letter-spacing: 10px;
+            font-weight: $fontWight2;
+        }
+    }
+}
+/*---------------------------header---------------------*/
+
+
+
+
+/*---------------------------price---------------------*/
+
+.price
+{
+    .price-brdr
+    {
+
+        .price-content
+        {
+            border: 1px solid #f4f2f3; 
+            padding-top: 30px;
+
+            h3 
+            {
+                font-size: $fontSize1 + 2px;
+                font-family: $fontFamily2;
+                font-weight: $fontWight2;
+                letter-spacing: 3px;
+            }
+            div 
+            {
+                padding-bottom: 20px;
+                span 
+                {
+                    display: block;
+                    padding-bottom: 20px;
+                    font-size: $fontSize2 + 10px;
+                    font-weight: $fontWight3;
+                    font-family: $fontFamily2;
+                    margin-left: -10px;
+                    text-align: center;
+                    sup 
+                    {
+                        margin-right: -10px;
+                    }
+                }
+                p 
+                {
+                    font-size: $fontSize1 + 3px;
+                    font-family: $fontFamily3;
+                    font-style: italic;
+                    color: $thirdColor;
+                }
+            }
+
+            ul 
+            {
+                li 
+                {
+                    padding-bottom: 10px;
+                    font-size: $fontSize1 + 1px;
+                    color: $thirdColor;
+                    font-weight: $fontWight1;
+                    font-family: 'segoe ui light';
+                }
+            }
+            .btn1
+            {
+                @extend .btn1;
+                color: $firstColor;
+                background-color: transparent;
+                padding: 15px 45px;
+                margin-left: 15px;
+                border: 0.1vw solid rgb(148, 146, 146);
+                text-transform: capitalize;
+                font-family: $fontFamily3;
+                @include move(.55s , all);
+                text-decoration: none;
+                font-size: $fontSize1 + 2px;
+                font-style: italic;
+                margin-bottom: 40px !important;
+            }
+            
+        }
+
+        .bg-price
+        {
+            background-color: #f4f2f3 ;
+        }
+    }
+    
+}
+
+/*---------------------------price---------------------*/
+
+/*---------------------------beauty---------------------*/
+
+.beauty
+{
+    .col-md-3 
+    {
+        img 
+        {
+            cursor: pointer;
+            @include move(0.2s , all)
+        }
+        img:hover 
+        {
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+        }
+    }
+}
+
+/*---------------------------beauty---------------------*/
+
+
+
+/*---------------------------carousel---------------------*/
+
+.carousel
+{
+
+    .head-content 
+    {
+        @extend .head;
+    }
+
+
+    .row
+    {
+        img 
+       {
+         width: 90%;
+         position: relative;
+       }
+
+
+       .cover
+       {
+          width: 90%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center; 
+          opacity: 0;
+          @include move(0.55s , all)
+       }
+       .cover:hover
+       {
+           opacity: 1;
+       }
+
+      
+    }
+}
+
+
+
+
+
+/*---------------------------carousel---------------------*/
+
+@media (max-width :768px) and (min-width : 576px)
+{
+    .beauty
+    {
+       .row
+       {
+           margin: auto;
+       }
+        img 
+        {
+            margin: auto;
+        }
+    }
+}
+
+
+/*-------------------------------------media 768 to 576---------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------media 768 to 450--------------------------------*/
+
+
+@media (max-width :576px) and (min-width : 450px)
+{
+    .carousel
+    {
+        .row
+        {
+            .col-12 
+            {
+                width: 100%;
+                height: 100%;
+                img 
+                {
+                    margin: auto !important;
+                }
+            }
+        }
+    }
+    
+}
+
+
+/*-------------------------------------media  max-width 450---------------------------------*/
+
+@media (max-width : 450px)
+{   
+    .carousel
+    {
+        .row
+        {
+            .col-12 
+            {
+                width: 100%;
+                height: 100%;
+                img 
+                {
+                    margin: auto !important;
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------------------media  max-width 450---------------------------------*/
