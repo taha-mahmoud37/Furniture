@@ -1482,6 +1482,16 @@
     }
     .img-summer
     {
+        overflow: hidden !important;
+        .cover
+        {
+            bottom: 13vw !important;
+        }
+        .icons
+        {
+            bottom: 25vw !important;
+            right: 20vw !important;
+        }
         .content
         {
             position: relative !important;
@@ -1506,6 +1516,7 @@
             }
         }
     }
+
 
     .icons-section
     {

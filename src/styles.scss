@@ -5,6 +5,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @import './app/colors/color';
 
+body
+{
+    overflow-x: hidden !important;
+}
 
 .fixed-top
 {

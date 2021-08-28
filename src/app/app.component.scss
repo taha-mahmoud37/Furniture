@@ -4,6 +4,12 @@
 @import './mixin/mxixn';
 
 
+body
+{
+    overflow-x: hidden !important;
+
+}
+
 .btn
 {
     position: fixed;
